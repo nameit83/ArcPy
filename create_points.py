@@ -1,13 +1,13 @@
 #modules and workspace
 import arcpy, os
-home = "C;/Data"
+home = "C;/Data"  #input home file directory
 arcpy.env.workspace = home
 
 #parameters
-in_fc = "route.shp"
-out_fc ="points.shp"
-interval = 250
-use_percent = False
+in_fc = "route.shp" #enter the input shapefile name
+out_fc ="points.shp" #enter the output shapefile name
+interval = 250 #enter interval
+use_percent = False #set to true in case you want to create points based on percentage of the total length
 end_points = True
 
 #creating output feature class
